@@ -1,70 +1,43 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# CULTURE CLUB
 
-## Available Scripts
+### INTRO
 
-In the project directory, you can run:
+_This app was inspired by the ever growing necessity for human connection._
 
-### `npm start`
+_If in a way we never had such a broad network to rely on, one of the results of the social midia is that we are becoming less social and more isolated in our own beliefes._
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+_The algorithms used so far help to perpetuate false perceptions and polarize the society._
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+_There's something magical and unique about being together and sharing thoughts and the tribal spirit that lives in all of us. Together we have the power to build the world that we are living in._
 
-### `npm test`
+## THE APP
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Culture Club original idea was created between friends to stimulate a way to catch up in a more regular basis. The idea is pretty simple.
 
-### `npm run build`
+Every week someone takes charge of the night planning something that everyone can enjoy together. A dinner party, a scape room, a magic show, a burlesque, a jazz gig, you name it. Or even just a simple walk around the block. The important thing is to get together and enjoy the occasion to do something different.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Only the person that is organising knows the plan, everybody else just goes with the flow and enjoy the night (or day). This helps to bring back the old gift of flowing.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Everyone share their availability and the invitations are send just telling the meeting point.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This app that is is still at a developing point has as a final goal to help people to find an event and organise the catch ups by managing schedules and invitations.
 
-### `npm run eject`
+## THE TECHNOLOGIES
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+This app was develped as two separate apps in React (frontend) and Node.js (backend).
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**The backend features the following technologies:**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Express (framework)
+- Express session/MySql session (persistent session)
+- Bcrypt (encryption of passwords)
+- Sendgrid (email sender)
+- MySql (database)
+- TicketMaster Api (events)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+**The frontend features the following technologies:**
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-# Culture-club-app-frontend
-# Culture-Club-Frontend
+- Mobx (state management)
+- Axios (promises)
+- ReactRouter (routing)
+- CSS (styling)
