@@ -1,0 +1,309 @@
+.App {
+  text-align: center;
+  position: relative;
+}
+.App .nav-bar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.902);
+  height: 5em;
+  width: 100%;
+  padding: 1em;
+}
+.App .home-session-btn {
+  border: 1px solid black;
+  border-radius: 50px;
+  outline: none;
+  color: white;
+  width: 2em;
+  height: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hvr-radial-out {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+  background: black;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-radial-out:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgb(255, 255, 255);
+  color: black;
+  border-radius: 100%;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-radial-out:hover,
+.hvr-radial-out:focus,
+.hvr-radial-out:active {
+  color: black;
+}
+.hvr-radial-out:hover:before,
+.hvr-radial-out:focus:before,
+.hvr-radial-out:active:before {
+  -webkit-transform: scale(2);
+  transform: scale(2);
+}
+.App .session-btns {
+  list-style: none;
+  color: rgba(0, 0, 0, 0.721);
+  list-style: none;
+  text-decoration: none;
+}
+.App .session-btns:hover {
+  color: #000000;
+}
+.session-btns.active {
+  padding-bottom: 0.2em;
+  border-bottom: 1px solid #000000;
+}
+.App .active {
+  color: #2891a4;
+}
+.home-session-btn.active {
+  background-color: #fff;
+}
+.App .logout-session-btn {
+  background-color: transparent;
+  padding: 0;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.App .logo-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.App .logo-container span {
+  font-size: 2rem;
+  color: #2891a4;
+}
+.App .site-name {
+  color: #000000;
+  text-shadow: 0 0 1px rgb(0, 0, 0);
+  text-align: left;
+  letter-spacing: 3px;
+}
+.App .menu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1em;
+}
+ul {
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+p {
+  margin: 1em 0;
+}
+@media screen and (min-width: 20em) {
+  body {
+    font-size: 1rem;
+  }
+  .App .site-name {
+    font-size: 1rem;
+    left: 2.8em;
+  }
+  .App .logout-session-btn {
+    font-size: 1rem;
+  }
+  .sign-up-form .img-main,
+  .login-form .img-main {
+    display: none;
+  }
+  .sign-up-form,
+  .login-form {
+    height: 25em;
+    font-size: 1rem;
+  }
+  .sign-up-form h2,
+  .login-form h2 {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.867);
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+  .sign-up-form .required,
+  .login-form .required {
+    font-size: 0.6rem;
+  }
+  .sign-up-form .valid-placeholder,
+  .login-form .valid-placeholder {
+    font-size: 0.6rem;
+  }
+  .login-form .login-btn {
+    height: 2rem;
+  }
+  .sign-up-form .signup-btn {
+    height: 2rem;
+  }
+  .home-banner-wrapper .home-banner-text {
+    display: none;
+  }
+  .create-event-form .submit-btn {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 40em) {
+  body {
+    font-size: 1.8rem;
+  }
+  .App .logo-container span {
+    font-size: 4rem;
+  }
+  .App .logout-session-btn {
+    font-size: 1.8rem;
+  }
+  .App .home-session-btn {
+    border: 2px solid black;
+  }
+  .App .home-session-btn {
+    font-size: 1.3rem;
+    width: 3em;
+    height: 3em;
+  }
+  .App .logo-container span {
+    font-size: 6rem;
+  }
+  .App .site-name {
+    font-size: 4rem;
+    left: 2.2em;
+  }
+  .sign-up-form .img-main,
+  .login-form .img-main {
+    display: block;
+    z-index: -1;
+    width: 20rem;
+  }
+  .sign-up-form,
+  .login-form {
+    height: 30em;
+  }
+  .sign-up-form input,
+  .login-form input {
+    width: 500px;
+    font-size: 2rem;
+  }
+  .sign-up-form h2,
+  .login-form h2 {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.867);
+    font-size: 3rem;
+    margin: 1.5rem 0;
+  }
+  .sign-up-form .required,
+  .login-form .required {
+    font-size: 0.8rem;
+  }
+  .sign-up-form .valid-placeholder,
+  .login-form .valid-placeholder {
+    font-size: 0.6rem;
+  }
+  .sign-up-form .signup-btn,
+  .login-form .login-btn {
+    height: 2rem;
+  }
+  .sign-up-form,
+  .login-form {
+    margin: 10rem auto;
+  }
+  .home .container {
+    padding: 1rem;
+  }
+  .events {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+  .event {
+    font-size: 2rem;
+    margin: 30px 0;
+  }
+  .date-format {
+    font-size: 1.2rem;
+  }
+  .home-banner {
+    width: 600px;
+    position: relative;
+    font-size: 1.5rem;
+  }
+  .home-banner-wrapper {
+    height: 25rem;
+    width: 100%;
+    left: 10em;
+    height: 25rem;
+    margin: 2em 0;
+  }
+  .home-banner-wrapper .home-banner-text {
+    display: block;
+  }
+  .home-banner-container {
+    margin: 0 0 10em 0;
+  }
+  .home-banner-container h2 {
+    font-size: 2.4em;
+  }
+  .home-banner-text {
+    color: black;
+  }
+  .container-event-img {
+    width: 250px;
+    height: 350px;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+  }
+  .event-img {
+    width: 500px;
+  }
+  .events {
+    margin: 0;
+  }
+  .profile-card h1 {
+    font-size: 8rem;
+  }
+  .profile-card {
+    grid-template-columns: 1fr 1fr;
+  }
+  .create-event-form {
+    font-size: 4rem;
+    padding: 2rem;
+  }
+  .create-event-form input {
+    padding: 2rem 0;
+    font-size: 1.2rem;
+  }
+  .banner-description {
+    margin: 15em 0 7em 0;
+  }
+  .whatsup {
+    font-size: 15rem;
+  }
+}

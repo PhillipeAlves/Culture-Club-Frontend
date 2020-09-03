@@ -1,0 +1,89 @@
+.sign-up-container {
+  background-image: linear-gradient(
+      rgb(255, 255, 255),
+      rgba(74, 119, 140, 0.44)
+    ),
+    url(https://i.pinimg.com/originals/35/ff/3d/35ff3d2e13ecca83a30019eef5e669ca.jpg);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+.sign-up-form {
+  background: linear-gradient(rgba(255, 255, 255, 0.789), rgb(255, 255, 255));
+  background-position: center;
+  position: relative;
+  margin: 10rem auto;
+  padding: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.902);
+  border: 1px solid #00000029;
+  border-radius: 2px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.244);
+}
+.sign-up-form input {
+  text-align: center;
+  width: 100%;
+  font-size: 1.2rem;
+  color: black;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.689);
+  padding: 0.5rem 0;
+  background-color: transparent;
+}
+.user-name {
+  margin-bottom: 1.3em;
+}
+.sign-up-form input::placeholder {
+  color: rgba(0, 0, 0, 0.634);
+}
+.sign-up-form input:focus::placeholder {
+  color: rgba(0, 0, 0, 0.868);
+}
+.sign-up-form h2 {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.867);
+  font-size: 4rem;
+  margin: 1.5rem 0;
+}
+.sign-up-form .valid-placeholder {
+  color: transparent;
+  font-size: 1rem;
+}
+.sign-up-form .valid {
+  font-size: 1rem;
+  color: #059e54;
+}
+.sign-up-form .required {
+  font-size: 1rem;
+  color: #ff2a2a;
+  /* width: 15rem; */
+}
+.sign-up-form .fa-check {
+  font-size: 0.8rem;
+}
+.sign-up-form .signup-btn {
+  border: 2px solid black;
+  border-radius: 3px;
+  outline: none;
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  width: 100%;
+  height: 3rem;
+  margin: 1rem 0 3rem 0;
+  cursor: pointer;
+}
+.sign-up-form .signup-btn:hover {
+  background-color: transparent;
+  color: black;
+  transition: all 0.1s ease-in-out;
+}
+.sign-up-form .signup-btn:active {
+  background-color: white;
+  color: rgb(30, 160, 236);
+}

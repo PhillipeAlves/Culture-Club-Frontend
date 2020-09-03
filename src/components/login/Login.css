@@ -1,0 +1,85 @@
+.login-container {
+  background-image: linear-gradient(rgb(255, 255, 255), rgba(74, 140, 87, 0.44)),
+    url(https://i.pinimg.com/originals/94/84/9c/94849ce3e05b87c5b6caeb6528a2ae62.jpg);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+.login-form {
+  background: linear-gradient(rgba(255, 255, 255, 0), rgb(255, 255, 255)),
+    url(https://images.unsplash.com/photo-1495745713439-7efd16a9555c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60);
+  background-position: center;
+  position: relative;
+  margin: 10rem auto;
+  padding: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #00000029;
+  border-radius: 2px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.244);
+}
+.login-form input {
+  text-align: center;
+  width: 100%;
+  font-size: 1.2rem;
+  color: black;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.689);
+  padding: 0.5rem 0;
+  background-color: transparent;
+}
+/* .login-form .img-main
+{
+    width: 25em;
+    opacity: 3;
+} */
+.login-form input::placeholder {
+  color: rgba(0, 0, 0, 0.634);
+}
+.login-form input:focus::placeholder {
+  color: rgba(0, 0, 0, 0.868);
+}
+.login-form h2 {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.867);
+}
+.login-form .valid-placeholder {
+  color: transparent;
+  font-size: 1em;
+}
+.login-form .valid {
+  font-size: 1em;
+  color: #059e54;
+}
+.login-form .required {
+  font-size: 1em;
+  color: #ff2a2a;
+}
+.login-form .fa-check {
+  font-size: 0.8em;
+}
+.login-form .login-btn {
+  border: 2px solid black;
+  border-radius: 3px;
+  outline: none;
+  background-color: black;
+  color: white;
+  font-size: 1em;
+  width: 100%;
+  height: 3em;
+  margin-top: 3em;
+  cursor: pointer;
+}
+.login-form .login-btn:hover {
+  background-color: transparent;
+  color: black;
+  transition: all 0.1s ease-in-out;
+}
+.login-form .login-btn:active {
+  background-color: white;
+  color: rgb(30, 160, 236);
+}

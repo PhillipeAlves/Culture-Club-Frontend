@@ -1,0 +1,105 @@
+.profile-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+.home-link {
+  color: black;
+}
+.profile-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0);
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+/* .profile-card .profile-picture {
+  max-width: 400px;
+} */
+.profile-picture-bg {
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-picture-bg h1 {
+  color: white;
+  font-size: 3rem;
+  padding: 0 2rem;
+}
+.profile-card h3 {
+  color: black;
+  padding: 0 5rem;
+}
+.create-event-form {
+  position: relative;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.create-event-form input {
+  text-align: center;
+  font-size: 1.2rem;
+  color: black;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.689);
+  padding: 1.4rem 0;
+  background-color: transparent;
+}
+.create-event-form input::placeholder {
+  color: rgba(0, 0, 0, 0.634);
+}
+.create-event-form input:focus::placeholder {
+  color: rgba(0, 0, 0, 0.868);
+}
+.create-event-form input.time {
+  width: 130px;
+  margin: 0 auto;
+  padding-left: 35px;
+  border: none;
+  animation: navigate 2s infinite;
+}
+@keyframes navigate {
+  /* 0 & 100% might not be needed */
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.create-event-form input.time:focus {
+  border: none;
+  animation: none;
+}
+.create-event-form .submit-btn {
+  /* border: 2px solid black; */
+  border-radius: 3px;
+  outline: none;
+  background-color: black;
+  color: white;
+  font-size: 1em;
+  width: 100%;
+  padding: 0.5rem 0;
+  cursor: pointer;
+}
+.create-event-form .submit-btn:hover {
+  background-color: transparent;
+  color: black;
+  transition: all 0.1s ease-in-out;
+}
+.create-event-form .submit-btn:active {
+  background-color: white;
+  color: #17c58c;
+}
