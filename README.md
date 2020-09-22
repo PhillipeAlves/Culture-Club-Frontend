@@ -1,3 +1,5 @@
+![Banner](/public/banner-cc.gif)
+
 # CULTURE CLUB
 
 ### INTRO
