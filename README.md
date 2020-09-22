@@ -1,4 +1,4 @@
-![Banner](/public/banner-cc.gif)
+![Banner](/public/cc-banner.gif)
 
 # CULTURE CLUB
 
